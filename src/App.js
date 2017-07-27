@@ -1,10 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
+import ForgetPassword from './components/ForgetPassword'
 import './App.css';
 import './styles/demo.less';
 
-class App extends React.Component {
+class App extends  React.Component {
     render() {
-        return (<h1>hello react</h1>);
+
+        return (<div><ForgetPassword/></div>);
     }
 }
 export default App;
