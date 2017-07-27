@@ -6,7 +6,11 @@ import '../styles/login.css';
 
 class Login extends React.Component {
     render() {
-        return (<h1>login</h1>);
+        return (<div>
+            <div className="login-title">智学，让学习更简单</div>
+            <div className="login-input"></div>
+            <i className="iconfont">&#xe66b;</i>
+        </div>);
     }
 }
 export default Login;

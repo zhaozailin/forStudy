@@ -1,0 +1,16 @@
+.login-title {
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  padding-top: 120px;
+  height: 400px;
+  background-color: #ddd;
+}
+
+.login-input {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 500px;
+}

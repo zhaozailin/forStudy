@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import './App.css';
-import './styles/demo.less';
+import Login from './components/Login';
 
 class App extends React.Component {
     render() {
-        return (<h1>hello react</h1>);
+        return (<div>
+            <Login/>
+        </div>);
     }
 }
 export default App;
