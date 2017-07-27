@@ -2,15 +2,47 @@
   font-size: 30px;
   width: 100%;
   text-align: center;
-  padding-top: 120px;
-  height: 400px;
-  background-color: #ddd;
+  padding-top: 10px;
+  height: 100px;
+  background-color: #ccc;
+  margin-bottom: 60px;
+  color: #fff;
 }
 
 .login-input {
   width: 90%;
   margin: auto;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  height: 500px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+}
+
+.login-user > i {
+  color: #00cabc;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.login-password {
+  margin-top: 20px;
+}
+
+.login-password > i {
+  color: #00cabc;
+  font-size: 21px;
+  position: relative;
+  left: -2px;
+}
+
+.login-input > input {
+  height: 23px;
+  width: 280px;
+  background-color: #fff !important;
+  border: none;
+  outline: none;
+  color: #666;
+  padding-left: 10px;
+  font-size: 15px;
 }

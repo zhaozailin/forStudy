@@ -224,31 +224,31 @@ module.exports = {
           },
         ],
       },
-      // {
-      //   test: /\.less$/,
-      //   use: [
-      //     require.resolve('style-loader'),
-      //     require.resolve('css-loader'),
-      //     {
-      //       loader: require.resolve('postcss-loader'),
-      //       options: {
-      //         ident: 'postcss', // https://webpack.js.org/guides/migrating/#complex-options
-      //         plugins: () => [
-      //           autoprefixer({
-      //             browsers: ['last 2 versions', 'Firefox ESR', '> 1%', 'ie >= 8', 'iOS >= 8', 'Android >= 4'],
-      //           }),
-      //           pxtorem({ rootValue: 100, propWhiteList: [] })
-      //         ],
-      //       },
-      //     },
-      //     {
-      //       loader: require.resolve('less-loader'),
-      //       options: {
-      //         modifyVars: { "@primary-color": "#1DA57A" },
-      //       },
-      //     },
-      //   ],
-      // }
+      {
+        test: /\.less$/,
+        use: [
+          require.resolve('style-loader'),
+          require.resolve('css-loader'),
+          {
+            loader: require.resolve('postcss-loader'),
+            options: {
+              ident: 'postcss', // https://webpack.js.org/guides/migrating/#complex-options
+              plugins: () => [
+                autoprefixer({
+                  browsers: ['last 2 versions', 'Firefox ESR', '> 1%', 'ie >= 8', 'iOS >= 8', 'Android >= 4'],
+                }),
+                // pxtorem({ rootValue: 100, propWhiteList: [] })
+              ],
+            },
+          },
+          {
+            loader: require.resolve('less-loader'),
+            options: {
+              modifyVars: { "@primary-color": "#1DA57A" },
+            },
+          },
+        ],
+      }
       // ** STOP ** Are you adding a new loader?
       // Remember to add the new extension(s) to the "file" loader exclusion list.
     ],
