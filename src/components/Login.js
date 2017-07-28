@@ -54,6 +54,10 @@ class Login extends React.Component {
         });
     }
 
+    toForgetPassword(){
+
+    }
+
     render() {
         return (
             <div>
@@ -76,7 +80,7 @@ class Login extends React.Component {
                         <i className="iconfont" onClick={this.rememberPassword.bind(this)}>&#xe600;</i>
                         <label onClick={this.rememberPassword.bind(this)}>记住密码</label>
                     </div>
-                    <a className="login-forget">忘记密码？</a>
+                    <a className="login-forget" onClick={this.toForgetPassword.bind(this)}>忘记密码？</a>
                 </div>
             </div>
         );
