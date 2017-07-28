@@ -5,6 +5,7 @@ import React from 'react';
 import '../styles/login.css';
 import {Button, Toast, WhiteSpace, WingBlank, Icon} from 'antd-mobile';
 import '../../node_modules/antd-mobile/dist/antd-mobile.css';
+import {hashHistory} from 'react-router';
 
 class Login extends React.Component {
     constructor() {
@@ -55,7 +56,7 @@ class Login extends React.Component {
     }
 
     toForgetPassword(){
-
+        hashHistory.push('/forget');
     }
 
     render() {

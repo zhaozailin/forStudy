@@ -1,8 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
 import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import {Router, Route, hashHistory} from 'react-router';
+import ForgetPassword from './components/ForgetPassword';
+import Login from './components/Login';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+render(
+    <Router history={hashHistory}>
+        <Route path="/" component={App}>
+            <Route path="/login" component={Login}/>
+            <Route path="/forget" component={ForgetPassword}/>
+        </Route>
+    </Router>,
+    document.getElementById('root')
+);
