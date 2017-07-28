@@ -1,9 +1,13 @@
+html body {
+  background-color: #fff;
+}
+
 .login-title {
-  font-size: 30px;
+  font-size: 40px;
   width: 100%;
   text-align: center;
   height: 200px;
-  background-color: #ccc;
+  background-color: #00cabc;
   margin-bottom: 30px;
   color: #fff;
   line-height: 200px;
@@ -17,6 +21,7 @@
   height: 80px;
   line-height: 40px;
   background-color: #fff;
+  display: flex;
 }
 
 .login-user i {
@@ -39,6 +44,8 @@
   width: 300px;
   border: none;
   font-size: 30px;
+  margin-top: 16px;
+  flex: 1;
 }
 
 .login-input > div {
@@ -55,17 +62,47 @@
   bottom: 5px;
 }
 
-html body {
-  background-color: #fff;
-}
-
 .login-btn {
   background-color: #00cabc !important;
   color: #fff !important;
   width: 90%;
-  margin: 100px auto 0;
+  margin: 90px auto 0;
+  border: none !important;
 }
 
 .login-btn-active {
   background-color: #2bc6dc;
+}
+
+.login-patriarch {
+  text-align: right;
+  width: 90%;
+  margin: 30px auto 0;
+}
+
+.login-patriarch a {
+  color: #00cabc;
+}
+
+.login-password-block {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.login-forget {
+  float: right;
+  color: #999;
+}
+
+.login-checkbox {
+  float: left;
+  color: #00cabc;
+  position: relative;
+}
+
+.login-checked {
+  color: #cd3a0d;
+  font-size: 30px;
+  position: absolute;
+  left: 2px;
 }
